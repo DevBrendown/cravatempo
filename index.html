@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CravaTempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <span class="badge">DESAFIO</span>
+            <h1>CravaTempo</h1>
+            <p>Você consegue cravar o tempo exato?</p>
+        </header>
+
+        <section class="game-card">
+
+            <div class="target">
+                <span>TEMPO-ALVO</span>
+                <strong id="targetTime">--.--</strong>
+                <small>segundos</small>
+            </div>
+
+            <div class="timer">
+                <span id="timerDisplay">0.00</span>
+                <small>segundos</small>
+            </div>
+
+            <div class="controls">
+                <button id="startBtn">Começar</button>
+                <button id="stopBtn" disabled>Parar</button>
+            </div>
+
+            <div id="result" class="result hidden">
+                <span id="resultTitle"></span>
+                <strong id="difference"></strong>
+                <p id="resultMessage"></p>
+            </div>
+
+            <button id="newGameBtn" class="new-game">
+                Novo desafio
+            </button>
+
+        </section>
+
+        <footer>
+            <p>O objetivo é parar o cronômetro o mais próximo possível do tempo-alvo.</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
